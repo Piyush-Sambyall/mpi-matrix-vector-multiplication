@@ -1,0 +1,12 @@
+# Compiled binaries
+mpi_exec
+*.o
+*.out
+
+# Generated results
+result_matrix.txt
+output.txt
+
+# OS / editor junk
+.DS_Store
+*.swp
