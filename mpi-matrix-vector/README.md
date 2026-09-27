@@ -103,6 +103,23 @@ visible as `N` grows.
 6. Rank 0 prints a preview, the elapsed time, and writes the complete
    result to `result_matrix.txt`.
 
+## Development screenshots
+
+Captured while building and debugging this program (`docs/screenshots/`):
+
+| # | Screenshot | What it shows |
+|---|---|---|
+| 01 | `01_segfault-large-matrix.png` | Segfault (signal 11) on a larger matrix — root cause of the switch to heap allocation |
+| 02 | `02_matrix-vector-multiplication-complete.png` | Minimal successful run |
+| 03 | `03_int-overflow-large-matrix.png` | Negative results from 32-bit `int` overflow — root cause of the switch to `long long` |
+| 04 | `04_matrix-20x20-full-run.png` | Full 20×20 matrix, vector, and result printed |
+| 05 | `05_output-redirected-to-file.png` | Redirecting full output to a file with `> output.txt` |
+| 06 | `06_large-run-execution-time-11s.png` | Larger run, ~12s execution time |
+| 07 | `07_run-in-progress.png` | A longer run still executing |
+| 08 | `08_mpi2-compile-errors.png` | Compile errors from a corrupted source file (stray `#`) |
+| 09 | `09_run-np10-saved-result-file.png` | 10-process run, result saved to `result_matrix.txt` |
+| 10 | `10_large-run-execution-time-192s.png` | Largest test run, ~193s execution time |
+
 ## Project structure
 
 ```
@@ -110,7 +127,8 @@ mpi-matrix-vector/
 ├── src/
 │   └── mpi_matrix_vector.c   # main MPI program
 ├── docs/
-│   └── sample_output.txt     # example run captured to a file
+│   ├── sample_output.txt     # example run captured to a file
+│   └── screenshots/          # development/debugging screenshots (01-10)
 ├── README.md
 ├── LICENSE
 └── .gitignore
