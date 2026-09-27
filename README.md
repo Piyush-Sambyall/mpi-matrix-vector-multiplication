@@ -146,10 +146,6 @@ mpi-matrix-vector/
   `MPI_Scatter` silently misbehave, the program checks this up front
   and exits with a clear error message.
 
-## License
-
-Released under the [MIT License](LICENSE).
-
 ## Author
 
 **Piyush Sambyal**
