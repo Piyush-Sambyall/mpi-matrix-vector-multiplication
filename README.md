@@ -149,4 +149,3 @@ mpi-matrix-vector/
 ## Author
 
 **Piyush Sambyal**
-B.Tech CSE (AI & ML), Model Institute of Engineering and Technology, Jammu
