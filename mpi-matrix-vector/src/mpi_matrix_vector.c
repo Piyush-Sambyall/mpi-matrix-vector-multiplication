@@ -21,7 +21,7 @@ static void print_matrix_preview(const long long *matrix, int n) {
     }
 }
 
-/* Print a truncated preview of a length-n vector. */
+
 static void print_vector_preview(const long long *vec, int n) {
     int preview = (n > PREVIEW_LIMIT * 2) ? PREVIEW_LIMIT * 2 : n;
     for (int i = 0; i < preview; i++) {
