@@ -5,7 +5,6 @@
 #define DEFAULT_N 20
 #define PREVIEW_LIMIT 10
 
-/* Print a truncated preview of an n x n matrix stored in row-major order. */
 static void print_matrix_preview(const long long *matrix, int n) {
     int preview = (n > PREVIEW_LIMIT) ? PREVIEW_LIMIT : n;
     for (int i = 0; i < preview; i++) {
